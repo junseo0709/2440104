@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Fight Night</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+        .menu-container a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .login-signup {
+            display: flex;
+            align-items: center;
+        }
+        .login-signup button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .main-container {
+            text-align: center;
+            color: white;
+            background: url('images/img.jpg') no-repeat center center/cover;
+            height: calc(100vh - 60px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-container h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+        .main-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .main-container button {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/img.jpg" alt="UFC Logo" style="height: 40px;">
+        </div>
+        <div class="menu-container">
+            <a href="#events">이벤트</a>
+            <a href="#ranking">랭킹</a>
+            <a href="#fighters">파이터</a>
+        </div>
+        <div class="login-signup">
+            <button onclick="window.location.href='login.html'">로그인</button>
+            <button onclick="window.location.href='signup.html'">회원가입</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <img src="images/img.jpg" alt="UFC 303 Poster" style="width: 80%; max-width: 600px; margin-bottom: 20px;">
+        <h1>UFC Fight Night</h1>
+        <h2>페레이라 대 프로하스카 2</h2>
+        <div>
+            <button>티켓 구입</button>
+            <button>시청 방법</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 UFC. All Rights Reserved.
+    </footer>
+</body>
+</html>
